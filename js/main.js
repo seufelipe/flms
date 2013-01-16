@@ -1,5 +1,10 @@
 $(function() {
-  var listSelector = '#movies-list';
+  var listSelector = '#movies-list',
+    counterSelector = '#movies-count';
+
+  function printCount(count) {
+    $(counterSelector).text(count);
+  }
 
   function printList(list) {
     for (var i = 0, len = list.length; i < len; i++) {
@@ -13,6 +18,7 @@ $(function() {
     success: function (data) {
       var movieList = data.split(/[\r\n]+/g);
       printList(movieList);
+      printCount(movieList.length);
     },
     dataType: 'text'
   });
