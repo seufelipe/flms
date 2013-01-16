@@ -12,9 +12,9 @@ body {
 }
 
 @font-face {
-	font-family: 'filmis';
-	src: url("../fonts/filmis.eot");
-	src: url("../fonts/filmis.eot?#iefix") format('embedded-opentype'), url("../fonts/filmis.woff") format('woff'), url("../fonts/filmis.ttf") format('truetype'), url("../fonts/filmis.svg#filmis") format('svg');
+	font-family: 'flms';
+	src: url("../fonts/flms.eot");
+	src: url("../fonts/flms.eot?#iefix") format('embedded-opentype'), url("../fonts/flms.woff") format('woff'), url("../fonts/flms.ttf") format('truetype'), url("../fonts/flms.svg#flms") format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -37,7 +37,7 @@ body {
 
 .icon-rate:before {
 	display: inline-block;
-	font-family: 'filmis';
+	font-family: 'flms';
 	font-style: normal;
 	font-weight: normal;
 	opacity: .8;

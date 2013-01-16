@@ -1,5 +1,5 @@
 {
-  "name": "filmis",
+  "name": "flms",
   "glyphs": [
     {
       "search": [
@@ -54,6 +54,19 @@
       "orig_code": 59404,
       "src": "fontelico",
       "from": 59404
+    },
+    {
+      "search": [
+        "loop",
+        "repeat"
+      ],
+      "code": 128257,
+      "uid": "8e0220796066428d6ddea96a4f1b5131",
+      "css": "review",
+      "orig_css": "loop",
+      "orig_code": 128257,
+      "src": "entypo",
+      "from": 128257
     }
   ]
 }
