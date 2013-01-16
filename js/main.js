@@ -7,7 +7,11 @@ $(function() {
   }
 
   function buildTag(cls, content) {
-    return $('<em></em>').addClass(cls).append(content);
+    return $('<span></span>').addClass(cls).append(content);
+  }
+  
+  function buildIcon() {
+    return $('<i class="icon-rate"></i>');
   }
 
   function printList(list) {
@@ -27,7 +31,7 @@ $(function() {
       var item = $('<li></li>').text(title);
 
       switch(rate) {
-        case '++': movie.rate = 'favorite'; break;
+        case '++': movie.rate = 'fav'; break;
         case '+': movie.rate = 'good'; break;
         case '-': movie.rate = 'bad'; break;
       }
@@ -39,8 +43,8 @@ $(function() {
         }
       }
 
-      if (movie.rate) item.addClass(movie.rate).append(buildTag('rate', movie.rate));
-      if (movie.review) item.append(buildTag('review', 'review'));
+      if (movie.review) item.append(buildTag('is-review', 'review'));
+      if (movie.rate) item.addClass(movie.rate).append(buildIcon());
       $(listSelector).append(item);
     }
   }
@@ -54,5 +58,4 @@ $(function() {
     },
     dataType: 'text'
   });
-  
 });
