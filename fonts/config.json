@@ -1,0 +1,59 @@
+{
+  "name": "filmis",
+  "glyphs": [
+    {
+      "search": [
+        "emoticon",
+        "smiley",
+        "happy"
+      ],
+      "code": 59392,
+      "meta": {
+        "email": "berbentseva_angela@yahoo.com",
+        "author": "Angela Berbentseva, specially for fontello"
+      },
+      "uid": "c64623255a4a7c72436b199b05296c4f",
+      "css": "good",
+      "orig_css": "emo-happy",
+      "orig_code": 59392,
+      "src": "fontelico",
+      "from": 59392
+    },
+    {
+      "search": [
+        "emoticon",
+        "smiley",
+        "displeased"
+      ],
+      "code": 59402,
+      "meta": {
+        "email": "berbentseva_angela@yahoo.com",
+        "author": "Angela Berbentseva, specially for fontello"
+      },
+      "uid": "043b585886018be7408f4c77c1a3759c",
+      "css": "bad",
+      "orig_css": "emo-displeased",
+      "orig_code": 59402,
+      "src": "fontelico",
+      "from": 59402
+    },
+    {
+      "search": [
+        "emoticon",
+        "smiley",
+        "grin"
+      ],
+      "code": 59404,
+      "meta": {
+        "email": "berbentseva_angela@yahoo.com",
+        "author": "Angela Berbentseva, specially for fontello"
+      },
+      "uid": "cbc328d1c779a2b9e3b1199d904199a5",
+      "css": "fav",
+      "orig_css": "emo-grin",
+      "orig_code": 59404,
+      "src": "fontelico",
+      "from": 59404
+    }
+  ]
+}
