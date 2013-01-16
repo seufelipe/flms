@@ -5,9 +5,67 @@ html {
 }
 
 body {
-	font: 100%/1 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	color: #444;
+	font: 100%/1.5 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	margin: 1.5rem auto;
+	width: 90%;
+}
+
+@font-face {
+	font-family: 'filmis';
+	src: url("../fonts/filmis.eot");
+	src: url("../fonts/filmis.eot?#iefix") format('embedded-opentype'), url("../fonts/filmis.woff") format('woff'), url("../fonts/filmis.ttf") format('truetype'), url("../fonts/filmis.svg#filmis") format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.site-title {
+	font-size: 2rem; /* 18px */
+	line-height: 1.5;
+	margin: 0 0 1.5rem 0;
 }
 
 #movies-list {
-	line-height: 1.5;
+	font-size: 2rem; /* 18px */
+	margin: 0;
+}
+
+.icon-rate {
+	display: inline-block;
+	margin-left: .5em;
+}
+
+.icon-rate:before {
+	display: inline-block;
+	font-family: 'filmis';
+	font-style: normal;
+	font-weight: normal;
+	opacity: .8;
+	speak: none;
+	text-align: center;	
+	width: 1em;
+}
+
+.good .icon-rate:before {
+	content: '\e800';
+}
+
+.bad .icon-rate:before {
+	content: '\e80a';
+}
+
+.fav .icon-rate:before {
+	content: '\e80c';
+}
+
+.is-review {
+	background: #444;
+	border-radius: 2px;
+	color: #fff;
+	display: inline-block;
+	margin-left: .5em;
+	opacity: .8;
+	padding: 0 .5em;
+	zoom: 1;
+	*display: inline;
 }
