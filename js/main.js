@@ -5,13 +5,9 @@ $(function() {
   function printCount(count) {
     $(counterSelector).text(count);
   }
-
-  function buildTag(cls, content) {
-    return $('<span></span>').addClass(cls).append(content);
-  }
   
-  function buildIcon() {
-    return $('<i class="icon-rate"></i>');
+  function buildIcon(cls,ttle) {
+    return $('<i class="icon"></i>').addClass(cls).attr('title', ttle);
   }
 
   function printList(list) {
@@ -31,9 +27,9 @@ $(function() {
       var item = $('<li></li>').text(title);
 
       switch(rate) {
-        case '++': movie.rate = 'fav'; break;
-        case '+': movie.rate = 'good'; break;
-        case '-': movie.rate = 'bad'; break;
+        case '++': movie.rate = 'fav'; movie.rate_title = 'Favorito'; break;
+        case '+': movie.rate = 'good'; movie.rate_title = 'Bom'; break;
+        case '-': movie.rate = 'bad'; movie.rate_title = 'Ruim'; break;
       }
 
       for (var j = 0, lenj = tags.length; j < lenj; j++) {
@@ -43,8 +39,8 @@ $(function() {
         }
       }
 
-      if (movie.review) item.append(buildTag('is-review', 'review'));
-      if (movie.rate) item.addClass(movie.rate).append(buildIcon());
+      if (movie.review) item.addClass('is-review').append(buildIcon('icon-review', 'Revisão'));
+      if (movie.rate) item.addClass(movie.rate).append(buildIcon('icon-' + movie.rate, movie.rate_title));
       $(listSelector).append(item);
     }
   }

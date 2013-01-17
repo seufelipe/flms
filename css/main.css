@@ -56,12 +56,12 @@ body {
 	padding: 0 0 0 3em;
 }
 
-.icon-rate {
+.icon {
 	display: inline-block;
 	margin-left: .5em;
 }
 
-.icon-rate:before {
+.icon:before {
 	display: inline-block;
 	font-family: 'flms';
 	font-style: normal;
@@ -71,26 +71,20 @@ body {
 	width: 1em;
 }
 
-.good .icon-rate:before {
+.icon-good:before {
 	content: '\e800';
 }
 
-.bad .icon-rate:before {
+.icon-bad:before {
 	content: '\e80a';
 }
 
-.fav .icon-rate:before {
+.icon-fav:before {
 	content: '\e80c';
 }
 
-.is-review {
-	background: #444;
-	color: #fff;
-	display: inline-block;
-	margin-left: .5em;
-	padding: 0 .5em;
-	zoom: 1;
-	*display: inline;
+.icon-review:before {
+	content: '\1f501';
 }
 
 @media only screen and (min-width: 920px) {
