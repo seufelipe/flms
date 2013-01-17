@@ -169,8 +169,18 @@
 ++		Mean Streets
 +	r	The Lost World: Jurassic Park
 +		Manhattan
++		Micmacs
+++		New York Stories
 +	r	Jurassic Park 3
+		O Hobbit
+++		Green Street Hooligans
+++		Game Change
 		Team America
-		Bad News: Bears
+++		Screwed
+		Good Morning Vietnam
+++		Kung Fu Hustle
+-		Porky's
+		Bad News: Bears (2005)
++		Three burials of Melquiades Estrada
 		The searchers
 ++		Muppets
