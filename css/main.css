@@ -51,13 +51,29 @@ body {
 }
 
 #movies-list {
-	font-size: 2rem; /* 18px */
+	counter-reset: li;
+	font-size: 2rem;
 	margin: 0;
-	padding: 0 0 0 3em;
+	padding: 0;
+}
+
+#movies-list > li {
+	list-style: none;
+	position: relative;
+}
+
+#movies-list > li:before {
+	content: counter(li);
+	counter-increment: li;
+	display: inline-block;
+	margin-right: .5em;
+	text-align: right;
+	width: 3em;
 }
 
 .icon {
 	display: inline-block;
+	line-height: 1;
 	margin-left: .5em;
 }
 
@@ -71,19 +87,19 @@ body {
 	width: 1em;
 }
 
-.icon-good:before {
+.icon--good:before {
 	content: '\e800';
 }
 
-.icon-bad:before {
+.icon--bad:before {
 	content: '\e80a';
 }
 
-.icon-fav:before {
+.icon--fav:before {
 	content: '\e80c';
 }
 
-.icon-review:before {
+.icon--review:before {
 	content: '\1f501';
 }
 

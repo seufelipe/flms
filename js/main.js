@@ -19,12 +19,12 @@ $(function() {
         continue;
       }
 
-      var rate = data[0],
-        tags=data[1],
-        title=data[2];
+      var rate  = data[0],
+          tags  = data[1],
+          title = data[2];
 
       var movie = {};
-      var item = $('<li></li>').text(title);
+      var item = $('<li class="movie"></li>').text(title);
 
       switch(rate) {
         case '++': movie.rate = 'fav'; movie.rate_title = 'Favorito'; break;
@@ -39,8 +39,8 @@ $(function() {
         }
       }
 
-      if (movie.review) item.addClass('is-review').append(buildIcon('icon-review', 'Revisão'));
-      if (movie.rate) item.addClass(movie.rate).append(buildIcon('icon-' + movie.rate, movie.rate_title));
+      if (movie.review) item.addClass('movie--is-review').append(buildIcon('icon--review', 'Revisão'));
+      if (movie.rate) item.addClass('movie--' + movie.rate).append(buildIcon('icon--' + movie.rate, movie.rate_title));
       $(listSelector).append(item);
     }
   }
