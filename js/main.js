@@ -24,7 +24,8 @@ $(function() {
           title = data[2];
 
       var movie = {};
-      var item = $('<li class="movie"></li>').text(title);
+      var item = $('<li></li>').addClass('movie');
+      item.append($('<strong></strong>').addClass('movie__title').text(title));
 
       switch(rate) {
         case '++': movie.rate = 'fav'; movie.rate_title = 'Favorito'; break;
@@ -39,7 +40,7 @@ $(function() {
         }
       }
 
-      if (movie.review) item.addClass('movie--is-review').append(buildIcon('icon--review', 'Revisão'));
+      if (movie.review) item.addClass('movie--is-review').append(buildIcon('icon--review', 'Revisto'));
       if (movie.rate) item.addClass('movie--' + movie.rate).append(buildIcon('icon--' + movie.rate, movie.rate_title));
       $(listSelector).append(item);
     }
