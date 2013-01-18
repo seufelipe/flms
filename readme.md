@@ -6,5 +6,5 @@ Detailed information on installation and usage, plus a list of who's already usi
 
 ## Credits
 
-Mathias Kretschek / User: mkretschek / JavaScript Master
-Felipe Coelho Kussik / <http://seufelipe.com.br> / Designer
+* Mathias Kretschek / [mkretschek](https://github.com/mkretschek) / JavaScript Master
+* Felipe Coelho Kussik / <http://seufelipe.com.br> / Designer
