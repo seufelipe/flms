@@ -8,6 +8,7 @@ body {
 	color: #444;
 	font: 100%/1.5 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
 	margin: 1.5rem auto;
+	position: relative;
 	width: 90%;
 }
 
@@ -37,10 +38,43 @@ body {
 	font-style: normal;
 }
 
+/* Links */
+
+a, 
+a:visited { 
+    color: #444;
+    text-decoration: none;
+}
+
+a:hover, 
+a:focus, 
+a:active { 
+    border: 0; 
+    color: #111;
+    -webkit-transition: color .1s ease-out;
+    -moz-transition: color .1s ease-out;
+    -o-transition: color .1s ease-out;    
+    transition: color .1s ease-out;
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+a:hover,
+a:active {
+	outline: 0;
+}
+
 .site-header {
 	background: #444;
 	color: #fff;
 	margin-bottom: 1.5rem;
+}
+
+.site-footer {
+	font-size: 2rem;
+	text-align: center;
 }
 
 .site-title {
@@ -67,8 +101,10 @@ body {
 	counter-increment: li;
 	display: inline-block;
 	margin-right: .5em;
-	text-align: right;
-	width: 3em;
+}
+
+.movie__title {
+	font-weight: normal;
 }
 
 .icon {
@@ -110,8 +146,20 @@ body {
 		width: 20rem;
 	}
 	
+	.site-footer {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		text-align: left;
+	}
+	
 	#movies-list {
 		margin-left: 20rem;
+	}
+	
+	#movies-list > li:before {
+		text-align: right;
+		width: 3em;
 	}
 	
 }
