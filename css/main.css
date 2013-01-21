@@ -67,9 +67,8 @@ a:active {
 }
 
 .site-header {
-	background: #444;
-	color: #fff;
 	margin-bottom: 1.5rem;
+	text-align: right;
 }
 
 .site-footer {
@@ -78,6 +77,8 @@ a:active {
 }
 
 .site-title {
+	background: #444;
+	color: #fff;
 	font-size: 2rem; /* 18px */
 	line-height: 1.5;
 	margin: 0;
@@ -137,6 +138,18 @@ a:active {
 
 .icon--rewatch:before {
 	content: '\1f501';
+}
+
+.icon--asc, .icon--desc {
+	cursor: pointer;
+}
+
+.icon--asc:before {
+	content: '\25B2';
+}
+
+.icon--desc:before {
+	content: '\25BC';
 }
 
 @media only screen and (min-width: 920px) {
