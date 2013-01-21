@@ -86,6 +86,7 @@ $(function() {
 
     $.ajax({
       url: config.moviesFile,
+      cache: false,
       success: function (data) {
         var movieList = data.split(/[\r\n]+/g);
         printList(movieList);
