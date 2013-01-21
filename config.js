@@ -4,6 +4,7 @@ $(function() {
 		title: "fala galera estou vendo filmes",
 		subtitle: "flms / " + ( new Date() ).getFullYear(),
 		moviesFile: "movies.txt",
+		searchSufix: "Movie",
 		reverseList: false,
 
 		favoriteLabel: "Favorito",

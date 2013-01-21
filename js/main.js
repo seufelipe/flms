@@ -81,6 +81,15 @@ $(function() {
       });
   }
 
+  // Handle web search, when clicking over a movie
+  function handleWebSearch() {
+
+    moviesList.on("click", ".movie__title", function(e) {
+      var movieTitle = $(e.currentTarget).text();
+      window.open( "https://www.google.com/search?q=" + movieTitle + " " + config.searchSufix );
+    });
+  }
+
   // Load movie list from config.moviesFile
   function loadMovies() {
 
@@ -109,6 +118,7 @@ $(function() {
 
       loadMovies();
       handleSort();
+      handleWebSearch();
     }
 
   };
