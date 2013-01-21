@@ -40,20 +40,20 @@ body {
 
 /* Links */
 
-a, 
-a:visited { 
+a,
+a:visited {
     color: #444;
     text-decoration: none;
 }
 
-a:hover, 
-a:focus, 
-a:active { 
-    border: 0; 
+a:hover,
+a:focus,
+a:active {
+    border: 0;
     color: #111;
     -webkit-transition: color .1s ease-out;
     -moz-transition: color .1s ease-out;
-    -o-transition: color .1s ease-out;    
+    -o-transition: color .1s ease-out;
     transition: color .1s ease-out;
 }
 
@@ -119,7 +119,7 @@ a:active {
 	font-style: normal;
 	font-weight: normal;
 	speak: none;
-	text-align: center;	
+	text-align: center;
 	width: 1em;
 }
 
@@ -135,31 +135,31 @@ a:active {
 	content: '\e80c';
 }
 
-.icon--review:before {
+.icon--rewatch:before {
 	content: '\1f501';
 }
 
 @media only screen and (min-width: 920px) {
-	
+
 	.site-header {
 		position: fixed;
 		width: 20rem;
 	}
-	
+
 	.site-footer {
 		position: absolute;
 		bottom: 0;
 		left: 0;
 		text-align: left;
 	}
-	
+
 	#movies-list {
 		margin-left: 20rem;
 	}
-	
+
 	#movies-list > li:before {
 		text-align: right;
 		width: 3em;
 	}
-	
+
 }
