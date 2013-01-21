@@ -2,6 +2,7 @@ $(function() {
   var moviesList = $('#movies-list'),
       moviesCount = $('#movies-count'),
       sortIcon = $('#sort-icon'),
+      subtitle = $('#subtitle'),
       reverseList = true,
       config = {};
 
@@ -102,6 +103,7 @@ $(function() {
 
       config = newConfig;
       reverseList = config.reverseList;
+      subtitle.text( config.subtitle ? config.subtitle : "flms" );
       document.title = config.title || document.title;
 
       loadMovies();
