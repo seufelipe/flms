@@ -37,11 +37,11 @@ $(function() {
       for (var j = 0, lenj = tags.length; j < lenj; j++) {
         var tag = tags[j];
         switch(tag) {
-          case 'r': movie.review = true; break;
+          case 'r': movie.rewatch = true; break;
         }
       }
 
-      if (movie.review) item.addClass('movie--is-review').append(buildIcon('icon--review', config.reviewLabel));
+      if (movie.rewatch) item.addClass('movie--is-rewatch').append(buildIcon('icon--rewatch', config.rewatchLabel));
       if (movie.rate) item.addClass('movie--' + movie.rate).append(buildIcon('icon--' + movie.rate, movie.rate_title));
       $(listSelector).append(item);
     }

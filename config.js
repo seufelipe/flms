@@ -7,7 +7,7 @@ $(function() {
 		favoriteLabel: "Favorito",
 		goodLabel: "Bom",
 		badLabel: "Ruim",
-		reviewLabel: "Revisto"
+		rewatchLabel: "Revisto"
 
 	});
 });
