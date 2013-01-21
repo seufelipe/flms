@@ -1,12 +1,12 @@
 $(function() {
-  var listSelector = '#movies-list',
-      counterSelector = '#movies-count',
-      sortIconSelector = '#sort-icon',
+  var moviesList = $('#movies-list'),
+      moviesCount = $('#movies-count'),
+      sortIcon = $('#sort-icon'),
       reverseList = true,
       config = {};
 
   function printCount(count) {
-    $(counterSelector).text(count);
+    moviesCount.text(count);
   }
 
   function buildIcon(cls,ttle) {
@@ -47,9 +47,9 @@ $(function() {
       if (movie.rate) item.addClass('movie--' + movie.rate).append(buildIcon('icon--' + movie.rate, movie.rate_title));
 
       if( reverseList ) {
-        $(listSelector).prepend(item);
+        moviesList.prepend(item);
       } else {
-        $(listSelector).append(item);
+        moviesList.append(item);
       }
 
     }
@@ -57,9 +57,6 @@ $(function() {
 
   // Handle sorting
   function handleSort() {
-
-    var sortIcon = $(sortIconSelector);
-    var list = $(listSelector);
 
     sortIcon
       .attr("title", config.sortLabel)
@@ -75,7 +72,7 @@ $(function() {
 
         // Reverse list sort
         $(".movie").each(function(index, movie) {
-          list.prepend(movie);
+          moviesList.prepend(movie);
         });
 
         reverseList = !reverseList;
