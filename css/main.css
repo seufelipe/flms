@@ -40,20 +40,20 @@ body {
 
 /* Links */
 
-a, 
-a:visited { 
+a,
+a:visited {
     color: #444;
     text-decoration: none;
 }
 
-a:hover, 
-a:focus, 
-a:active { 
-    border: 0; 
+a:hover,
+a:focus,
+a:active {
+    border: 0;
     color: #111;
     -webkit-transition: color .1s ease-out;
     -moz-transition: color .1s ease-out;
-    -o-transition: color .1s ease-out;    
+    -o-transition: color .1s ease-out;
     transition: color .1s ease-out;
 }
 
@@ -67,9 +67,8 @@ a:active {
 }
 
 .site-header {
-	background: #444;
-	color: #fff;
 	margin-bottom: 1.5rem;
+	text-align: right;
 }
 
 .site-footer {
@@ -78,6 +77,8 @@ a:active {
 }
 
 .site-title {
+	background: #444;
+	color: #fff;
 	font-size: 2rem; /* 18px */
 	line-height: 1.5;
 	margin: 0;
@@ -89,6 +90,7 @@ a:active {
 	font-size: 2rem;
 	margin: 0;
 	padding: 0;
+	min-height: 120px;
 }
 
 #movies-list > li {
@@ -119,7 +121,7 @@ a:active {
 	font-style: normal;
 	font-weight: normal;
 	speak: none;
-	text-align: center;	
+	text-align: center;
 	width: 1em;
 }
 
@@ -135,31 +137,43 @@ a:active {
 	content: '\e80c';
 }
 
-.icon--review:before {
+.icon--rewatch:before {
 	content: '\1f501';
 }
 
+.icon--asc, .icon--desc {
+	cursor: pointer;
+}
+
+.icon--asc:before {
+	content: '\25B2';
+}
+
+.icon--desc:before {
+	content: '\25BC';
+}
+
 @media only screen and (min-width: 920px) {
-	
+
 	.site-header {
 		position: fixed;
 		width: 20rem;
 	}
-	
+
 	.site-footer {
 		position: absolute;
 		bottom: 0;
 		left: 0;
 		text-align: left;
 	}
-	
+
 	#movies-list {
 		margin-left: 20rem;
 	}
-	
+
 	#movies-list > li:before {
 		text-align: right;
 		width: 3em;
 	}
-	
+
 }
