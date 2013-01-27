@@ -86,7 +86,7 @@ $(function() {
 
     moviesList.on("click", ".movie__title", function(e) {
       var movieTitle = $(e.currentTarget).text();
-      window.open( "https://www.google.com/search?q=" + movieTitle + " " + config.searchSufix );
+      window.open( "https://www.google.com/search?q=" + encodeURIComponent(movieTitle) + " " + encodeURIComponent(config.searchSufix) );
     });
   }
 
