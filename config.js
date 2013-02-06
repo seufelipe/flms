@@ -6,9 +6,9 @@ $(function() {
 		moviesFile: "movies.txt",
 		reverseList: false,
 
-		favoriteLabel: "Favorito",
-		goodLabel: "Bom",
-		badLabel: "Ruim",
+		favoriteLabel: "Gostei bastante",
+		goodLabel: "Gostei",
+		badLabel: "Não gostei",
 		rewatchLabel: "Revisto",
 		sortLabel: "Inverter Lista"
 
