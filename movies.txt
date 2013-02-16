@@ -1,4 +1,4 @@
-+		Jeff, who lives at home
+		Jeff, who lives at home
 ++		Skyfall
 		A dangerous method
 +		Cosmopolis
@@ -16,7 +16,7 @@
 ++		Primer
 ++		Mansome
 +		Tiny Furniture
-+		Greenberg
+		Greenberg
 ++		Bernie
 ++		Clube dos 5
 ++		Fever Pitch (1997)
@@ -25,6 +25,8 @@
 -		Missão Impossível 2
 ++		Missão Impossível 3
 +		Casa de mi padre
-+		Monty Python: Almost the truth (Lawyers cut)
+++		Monty Python: Almost the truth (Lawyers cut)
 ++		Bottle Rocket
 ++		Missão Impossível: Protocolo Fantasma
+		Kicking and Screaming
+-		J. Edgar
