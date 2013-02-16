@@ -95,7 +95,10 @@ a:active {
 
 #movies-list > li {
 	list-style: none;
+	overflow: hidden;
 	position: relative;
+	text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 #movies-list > li:before {
