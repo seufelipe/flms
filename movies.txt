@@ -34,3 +34,6 @@
 ++		O som ao redor
 ++		Looper
 ++	r	Bastardos Inglórios
+		360
+++	r	O Profissional
+		Tão forte e tão perto
