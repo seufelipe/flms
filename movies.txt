@@ -36,4 +36,7 @@
 ++	r	Bastardos Inglórios
 		360
 ++	r	O Profissional
-		Tão forte e tão perto
+-		Tão forte e tão perto
+		Salmon fishing in the Yemen
++		Argo
+++	r	Alta fidelidade
