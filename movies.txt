@@ -44,3 +44,7 @@
 +		Valente
 +		Deus da carnificina
 ++	r	Ligeiramente grávidos
++		Intocáveis
++		Taken 2
+++		Homens e Deuses
+-		Jovens adultos
