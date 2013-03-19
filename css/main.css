@@ -86,7 +86,7 @@ a:active {
 }
 
 #movies-list {
-	counter-reset: li;
+	counter-reset: item;
 	font-size: 2rem;
 	margin: 0;
 	padding: 0;
@@ -94,6 +94,7 @@ a:active {
 }
 
 #movies-list > li {
+	counter-increment: item;
 	list-style: none;
 	overflow: hidden;
 	position: relative;
@@ -102,8 +103,7 @@ a:active {
 }
 
 #movies-list > li:before {
-	content: counter(li);
-	counter-increment: li;
+	content: counter(item);
 	display: inline-block;
 	margin-right: .5em;
 }
@@ -142,18 +142,6 @@ a:active {
 
 .icon--rewatch:before {
 	content: '\1f501';
-}
-
-.icon--asc, .icon--desc {
-	cursor: pointer;
-}
-
-.icon--asc:before {
-	content: '\25B2';
-}
-
-.icon--desc:before {
-	content: '\25BC';
 }
 
 @media only screen and (min-width: 920px) {

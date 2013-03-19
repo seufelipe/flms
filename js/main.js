@@ -2,7 +2,6 @@ $(function() {
   var moviesList = $('#movies-list'),
       moviesCount = $('#movies-count'),
       sortIcon = $('#sort-icon'),
-      subtitle = $('#subtitle'),
       reverseList = true,
       config = {};
 
@@ -28,8 +27,11 @@ $(function() {
           title = data[2];
 
       var movie = {};
+
       var item = $('<li></li>').addClass('movie');
-      item.append($('<strong></strong>').addClass('movie__title').text(title));
+          item.append($('<strong></strong>').addClass('movie__number'));
+          item.append($('<strong></strong>').addClass('movie__title').text(title));
+
 
       switch(rate) {
         case '++': movie.rate = 'fav'; movie.rate_title = config.favoriteLabel; break;
@@ -48,37 +50,12 @@ $(function() {
       if (movie.rate) item.addClass('movie--' + movie.rate).append(buildIcon('icon--' + movie.rate, movie.rate_title));
 
       if( reverseList ) {
-        moviesList.prepend(item);
+        moviesList.append(item).reverse;
       } else {
         moviesList.append(item);
       }
 
     }
-  }
-
-  // Handle sorting
-  function handleSort() {
-
-    sortIcon
-      .attr("title", config.sortLabel)
-      .addClass( reverseList ? "icon--desc" : "icon--asc" )
-      .on("click", function(){
-
-        // Change icon
-        if( reverseList ) {
-          sortIcon.removeClass("icon--desc").addClass("icon--asc");
-        } else {
-          sortIcon.removeClass("icon--asc").addClass("icon--desc");
-        }
-
-        // Reverse list sort
-        $(".movie").each(function(index, movie) {
-          moviesList.prepend(movie);
-        });
-
-        reverseList = !reverseList;
-
-      });
   }
 
   // Load movie list from config.moviesFile
@@ -103,11 +80,8 @@ $(function() {
 
       config = newConfig;
       reverseList = config.reverseList;
-      subtitle.text( config.subtitle ? config.subtitle : "flms" );
-      document.title = config.title || document.title;
 
       loadMovies();
-      handleSort();
     }
 
   };
