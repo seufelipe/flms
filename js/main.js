@@ -22,16 +22,17 @@ $(function() {
         continue;
       }
 
+      var n = i + 1;
+
       var rate  = data[0],
           tags  = data[1],
           title = data[2];
 
       var movie = {};
 
-      var item = $('<li></li>').addClass('movie');
-          item.append($('<strong></strong>').addClass('movie__number'));
+      var item = $('<li></li>').attr('id', 'movie-' + n).addClass('movie');
+          item.append($('<span></span>').addClass('movie__number').text(n));
           item.append($('<strong></strong>').addClass('movie__title').text(title));
-
 
       switch(rate) {
         case '++': movie.rate = 'fav'; movie.rate_title = config.favoriteLabel; break;
@@ -50,7 +51,7 @@ $(function() {
       if (movie.rate) item.addClass('movie--' + movie.rate).append(buildIcon('icon--' + movie.rate, movie.rate_title));
 
       if( reverseList ) {
-        moviesList.append(item).reverse;
+        moviesList.prepend(item);
       } else {
         moviesList.append(item);
       }

@@ -86,7 +86,6 @@ a:active {
 }
 
 #movies-list {
-	counter-reset: item;
 	font-size: 2rem;
 	margin: 0;
 	padding: 0;
@@ -94,7 +93,6 @@ a:active {
 }
 
 #movies-list > li {
-	counter-increment: item;
 	list-style: none;
 	overflow: hidden;
 	position: relative;
@@ -102,14 +100,15 @@ a:active {
     white-space: nowrap;
 }
 
-#movies-list > li:before {
-	content: counter(item);
-	display: inline-block;
-	margin-right: .5em;
-}
-
 .movie__title {
 	font-weight: normal;
+}
+
+.movie__number {
+	display: inline-block;
+	margin-right: 1rem;
+	text-align: right;
+	width: 3rem;
 }
 
 .icon {
