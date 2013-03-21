@@ -12,3 +12,4 @@ Detailed information on installation and usage, plus a list of who's already usi
 ### Contributors
 
 * André Gil / <http://andregil.net> / Developer
+* Eduardo Zulian / <http://flutuante.com.br> / Developer
