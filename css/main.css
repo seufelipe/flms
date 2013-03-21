@@ -7,7 +7,7 @@ html {
 body {
 	color: #444;
 	font: 100%/1.5 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-	margin: 1.5rem auto;
+	margin: 3rem auto;
 	position: relative;
 	width: 98%;
 }
@@ -160,18 +160,28 @@ a:active {
 	content: '\1f501';
 }
 
+.movie:hover .movie__title {
+	color: #111;
+	-webkit-transition: color .1s ease-in-out;
+    -moz-transition: color .1s ease-in-out;
+    -o-transition: color .1s ease-in-out;
+    transition: color .1s ease-in-out;
+}
+
 @media only screen and (min-width: 920px) {
 
 	.site-header {
 		position: fixed;
+		top: 0;
+		left: 0;
 		width: 20rem;
 	}
 
 	.site-footer {
-		position: absolute;
+		position: fixed;
 		bottom: 0;
-		left: 0;
-		text-align: left;
+		right: 0;
+		text-align: right;
 	}
 
 	#movies-list {
