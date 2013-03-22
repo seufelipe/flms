@@ -7,7 +7,7 @@ html {
 body {
 	color: #444;
 	font: 100%/1.5 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-	margin: 3rem auto;
+	margin: 0 auto;
 	position: relative;
 	width: 98%;
 }
@@ -67,13 +67,30 @@ a:active {
 }
 
 .site-header {
-	margin-bottom: 1.5rem;
-	text-align: right;
+	background: #444;
+	position: relative;
+	text-align: center;
+	z-index: 2;
+	width: 100%;
+}
+
+.site-title {
+	background: #444;
+	color: #fff;
+	display: inline-block;
+	font-size: 2rem; /* 18px */
+	line-height: 1.5;
+	margin: 0;
+	padding: 0 1em;
 }
 
 .site-footer {
+	background: #fe6;
 	font-size: 2rem;
+	position: relative;
 	text-align: center;
+	z-index: 2;
+	width: 100%;
 }
 
 .site-footer a {
@@ -91,20 +108,10 @@ a:active {
     transition: padding .1s ease-in-out;
 }
 
-.site-title {
-	background: #444;
-	color: #fff;
-	font-size: 2rem; /* 18px */
-	line-height: 1.5;
-	margin: 0;
-	text-align: center;
-}
-
 #movies-list {
 	font-size: 2rem;
-	margin: 0;
+	margin: 1.5rem 0;
 	padding: 0;
-	min-height: 120px;
 }
 
 #movies-list > li {
@@ -171,13 +178,15 @@ a:active {
 @media only screen and (min-width: 920px) {
 
 	.site-header {
+		background: #fff;
 		position: fixed;
 		top: 0;
 		left: 0;
-		width: 20rem;
+		text-align: left;
 	}
 
 	.site-footer {
+		background: #fff;
 		position: fixed;
 		bottom: 0;
 		right: 0;
@@ -185,12 +194,7 @@ a:active {
 	}
 
 	#movies-list {
-		margin-left: 20rem;
-	}
-
-	#movies-list > li:before {
-		text-align: right;
-		width: 3em;
+		margin: 3rem 0;
 	}
 
 }
