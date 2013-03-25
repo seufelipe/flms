@@ -110,8 +110,8 @@ a:active {
 
 #movies-list {
 	font-size: 2rem;
-	margin: 1.5rem 0;
-	padding: 0;
+	margin: 0 auto;
+	padding: 1.5rem 0;
 }
 
 #movies-list > li {
@@ -168,11 +168,11 @@ a:active {
 }
 
 .movie:hover .movie__title {
-	color: #111;
-	-webkit-transition: color .1s ease-in-out;
-    -moz-transition: color .1s ease-in-out;
-    -o-transition: color .1s ease-in-out;
-    transition: color .1s ease-in-out;
+	background: #fe6;
+	-webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    -o-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
 }
 
 @media only screen and (min-width: 920px) {
@@ -194,7 +194,24 @@ a:active {
 	}
 
 	#movies-list {
-		margin: 3rem 0;
+		background: linear-gradient(white 30%, rgba(255,255,255,0)),
+					linear-gradient(rgba(255,255,255,0), white 70%) 0 100%,
+					radial-gradient(50% 0, farthest-side, rgba(0,0,0,.2), rgba(0,0,0,0)),
+					radial-gradient(50% 100%, farthest-side, rgba(0,0,0,.2), rgba(0,0,0,0)) 0 100%;
+		background: linear-gradient(white 30%, rgba(255,255,255,0)),
+					linear-gradient(rgba(255,255,255,0), white 70%) 0 100%,
+					radial-gradient(farthest-side at 50% 0, rgba(0,0,0,.2), rgba(0,0,0,0)),
+					radial-gradient(farthest-side at 50% 100%, rgba(0,0,0,.2), rgba(0,0,0,0)) 0 100%;
+		background-repeat: no-repeat;
+		background-color: white;
+		background-size: 100% 48px, 100% 48px, 100% 16px, 100% 16px;
+		background-attachment: local, local, scroll, scroll;
+
+		overflow: auto;
+		position: fixed;
+		top: 3rem;
+		bottom: 3rem;
+		width: 100%;
 	}
 
 }
