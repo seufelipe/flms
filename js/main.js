@@ -1,7 +1,6 @@
 $(function() {
-  var moviesList = $('#movies-list'),
-      moviesCount = $('#movies-count'),
-      sortIcon = $('#sort-icon'),
+  var moviesList = $('.js-movies-list'),
+      moviesCount = $('.js-movies-count'),
       reverseList = true,
       config = {};
 

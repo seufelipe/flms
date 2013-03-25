@@ -108,13 +108,13 @@ a:active {
     transition: padding .1s ease-in-out;
 }
 
-#movies-list {
+.movies-list {
 	font-size: 2rem;
 	margin: 0 auto;
 	padding: 1.5rem 0;
 }
 
-#movies-list > li {
+.movies-list > li {
 	list-style: none;
 	overflow: hidden;
 	position: relative;
@@ -193,7 +193,7 @@ a:active {
 		text-align: right;
 	}
 
-	#movies-list {
+	.movies-list {
 		background: linear-gradient(white 30%, rgba(255,255,255,0)),
 					linear-gradient(rgba(255,255,255,0), white 70%) 0 100%,
 					radial-gradient(50% 0, farthest-side, rgba(0,0,0,.2), rgba(0,0,0,0)),
