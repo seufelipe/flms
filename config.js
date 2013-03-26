@@ -3,6 +3,7 @@ $(function() {
 
 		moviesFile: "movies.txt",
 		reverseList: true,
+		searchSufix: "Movie",
 
 		favoriteLabel: "Gostei bastante",
 		goodLabel: "Gostei",

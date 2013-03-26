@@ -58,11 +58,21 @@ $(function() {
     }
   }
 
+  // Handle web search, when clicking over a movie
+  function handleWebSearch() {
+
+    moviesList.on("click", ".movie__title", function(e) {
+      var movieTitle = $(e.currentTarget).text();
+      window.open( "https://www.google.com/search?q=" + encodeURIComponent(movieTitle) + " " + encodeURIComponent(config.searchSufix) );
+    });
+  }
+
   // Load movie list from config.moviesFile
   function loadMovies() {
 
     $.ajax({
       url: config.moviesFile,
+      cache: false,
       success: function (data) {
         var movieList = data.split(/[\r\n]+/g);
         printList(movieList);
@@ -82,6 +92,7 @@ $(function() {
       reverseList = config.reverseList;
 
       loadMovies();
+      handleWebSearch();
     }
 
   };

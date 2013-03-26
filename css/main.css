@@ -124,6 +124,7 @@ a:active {
 
 .movie__title {
 	font-weight: normal;
+	cursor: pointer;
 }
 
 .movie__number {
