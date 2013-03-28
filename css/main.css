@@ -7,9 +7,7 @@ html {
 body {
 	color: #444;
 	font: 100%/1.5 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-	margin: 0 auto;
 	position: relative;
-	width: 98%;
 }
 
 * {
@@ -111,7 +109,7 @@ a:active {
 .movies-list {
 	font-size: 2rem;
 	margin: 0 auto;
-	padding: 1.5rem 0;
+	padding: 1.5rem 1em;
 }
 
 .movies-list > li {
@@ -123,8 +121,11 @@ a:active {
 }
 
 .movie__title {
-	font-weight: normal;
-	cursor: pointer;
+	position: relative;
+}
+
+.movie__title:active {
+	top: 1px;
 }
 
 .movie__number {
@@ -132,7 +133,6 @@ a:active {
 	display: inline-block;
 	margin-right: 1rem;
 	text-align: right;
-	width: 3rem;
 }
 
 .icon {

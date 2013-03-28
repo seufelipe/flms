@@ -31,7 +31,7 @@ $(function() {
 
       var item = $('<li></li>').attr('id', 'movie-' + n).addClass('movie');
           item.append($('<span></span>').addClass('movie__number').text(n));
-          item.append($('<strong></strong>').addClass('movie__title').text(title));
+          item.append($('<a href="https://www.google.com/search?q=' + encodeURIComponent(title) + ' ' + encodeURIComponent(config.searchSufix) + '"></a>').addClass('movie__title').text(title));
 
       switch(rate) {
         case '++': movie.rate = 'fav'; movie.rate_title = config.favoriteLabel; break;
@@ -58,14 +58,6 @@ $(function() {
     }
   }
 
-  // Handle web search, when clicking over a movie
-  function handleWebSearch() {
-
-    moviesList.on("click", ".movie__title", function(e) {
-      var movieTitle = $(e.currentTarget).text();
-      window.open( "https://www.google.com/search?q=" + encodeURIComponent(movieTitle) + " " + encodeURIComponent(config.searchSufix) );
-    });
-  }
 
   // Load movie list from config.moviesFile
   function loadMovies() {
