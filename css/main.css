@@ -109,7 +109,7 @@ a:active {
 .movies-list {
 	font-size: 2rem;
 	margin: 0 auto;
-	padding: 1.5rem 1em;
+	padding: 1.5rem 0;
 }
 
 .movies-list > li {
@@ -133,6 +133,7 @@ a:active {
 	display: inline-block;
 	margin-right: 1rem;
 	text-align: right;
+	width: 2em;
 }
 
 .icon {
