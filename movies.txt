@@ -1,7 +1,7 @@
 		Jeff, who lives at home
 ++		Skyfall
 		A dangerous method
-+		Cosmopolis
+++		Cosmopolis
 ++		Seven Psychopaths
 		The Expendables 2
 +		Gosford Park
@@ -60,3 +60,8 @@
 ++		Tinker Taylor Soldier Spy
 +		Os Infratores
 ++		Indie Game
+++		Submarine
+++		Brick
++		Safety not guaranteed
+		One night in Turin
+++	r	Senhores do crime
