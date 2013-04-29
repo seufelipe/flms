@@ -67,3 +67,4 @@
 ++	r	Senhores do crime
 +		Extract
 +		Desconstruindo Harry
++	r	Confissões de uma mente perigosa
