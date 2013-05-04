@@ -7,8 +7,8 @@ $(function() {
 		moviesCount.text(count);
 	}
 
-	function buildIcon(cls,ttle) {
-		return $('<i class="icon"></i>').addClass(cls).attr('title', ttle);
+	function buildIcon(icn,lbl,cls) {
+		return $('<i class="icon"><span aria-hidden="true" data-icon="' + icn +'"></span><span class="assistive-text">' + lbl + '</span></i>').addClass(cls).attr('title', lbl);
 	}
 
 	function printList(list) {
@@ -33,20 +33,24 @@ $(function() {
 			item.append($('<a href="https://www.google.com/search?q=' + encodeURIComponent(title) + ' ' + encodeURIComponent(config.searchSufix) + '" title="Google It!"></a>').addClass('movie__title').text(title));
 
 			switch(rate) {
-				case '++': movie.rate = 'fav'; movie.rate_title = config.favoriteLabel; break;
-				case '+': movie.rate = 'good'; movie.rate_title = config.goodLabel; break;
-				case '-': movie.rate = 'bad'; movie.rate_title = config.badLabel; break;
+				case '++': movie.rate = 'fav'; movie.rate_title = config.favoriteLabel; movie.rate_icon = '&#x2606;'; break;
+				case '+': movie.rate = 'good'; movie.rate_title = config.goodLabel; movie.rate_icon = '&#x1f44d;'; break;
+				case '-': movie.rate = 'bad'; movie.rate_title = config.badLabel; movie.rate_icon = '&#x1f44e;'; break;
 			}
 
 			for (var j = 0, lenj = tags.length; j < lenj; j++) {
 				var tag = tags[j];
 				switch(tag) {
-					case 'r': movie.rewatch = true; break;
+					case 'r': movie.rewatch = true; movie.rewatch_title = config.rewatchLabel; movie.rewatch_icon = '&#x27f3;'; break;
 				}
 			}
 
-			if (movie.rewatch) item.addClass('movie--is-rewatch').append(buildIcon('icon--rewatch', config.rewatchLabel));
-			if (movie.rate) item.addClass('movie--' + movie.rate).append(buildIcon('icon--' + movie.rate, movie.rate_title));
+			if (movie.rewatch)
+				item.addClass('movie--is-rewatch').append(buildIcon(movie.rewatch_icon, movie.rewatch_title, 'icon--status'));
+			else
+				item.append(buildIcon('&#x2713;', config.watchLabel, 'icon--status'));
+			if (movie.rate)
+				item.addClass('movie--' + movie.rate).append(buildIcon(movie.rate_icon, movie.rate_title, 'icon--rate'));
 
 			if( reverseList ) {
 				moviesList.prepend(item);

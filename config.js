@@ -5,10 +5,11 @@ $(function() {
 		reverseList: true,
 		searchSufix: "film",
 
+		watchLabel: "Visto",
+		rewatchLabel: "Revisto",
 		favoriteLabel: "Gostei bastante",
 		goodLabel: "Gostei",
 		badLabel: "Não gostei",
-		rewatchLabel: "Revisto",
 
 	});
 });

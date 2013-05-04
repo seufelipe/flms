@@ -1,21 +1,12 @@
 Font license info
 
 
-## Fontelico
+## Font Awesome
 
-   Copyright (C) 2012 by Fontello project
+   Copyright (C) 2012 by Dave Gandy
 
-   Author:    Crowdsourced, for Fontello project
-   License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://fontello.com
-
-
-## Entypo
-
-   Copyright (C) 2012 by Daniel Bruce
-
-   Author:    Daniel Buce
-   License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://www.entypo.com
+   Author:    Dave Gandy
+   License:   CC BY 3.0 (http://creativecommons.org/licenses/by/3.0/)
+   Homepage:  http://fortawesome.github.com/Font-Awesome/
 
 
