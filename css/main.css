@@ -36,6 +36,21 @@ body {
 	font-style: normal;
 }
 
+[data-icon]:before {
+	font-family: 'flms';
+	font-size: 100%;
+	content: attr(data-icon);
+	speak: none;
+}
+
+.assistive-text {
+	position: absolute !important;
+	height: 1px; width: 1px;
+	overflow: hidden;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
 /* Links */
 
 a,
@@ -106,13 +121,16 @@ a:active {
     transition: padding .1s ease-in-out;
 }
 
-.movies-list {
+.movies {
 	font-size: 2rem;
-	margin: 0 auto;
-	padding: 1.5rem 0;
 }
 
-.movies-list > li {
+.movies__list {
+	margin: 0;
+	padding: 3rem 0;
+}
+
+.movies__list > li {
 	list-style: none;
 	overflow: hidden;
 	position: relative;
@@ -139,34 +157,12 @@ a:active {
 .icon {
 	color: #777;
 	display: inline-block;
-	line-height: 1;
+	font-style: normal;
 	margin-left: .5em;
 }
 
-.icon:before {
-	display: inline-block;
-	font-family: 'flms';
-	font-style: normal;
-	font-weight: normal;
-	speak: none;
-	text-align: center;
-	width: 1em;
-}
-
-.icon--good:before {
-	content: '\e800';
-}
-
-.icon--bad:before {
-	content: '\e80a';
-}
-
-.icon--fav:before {
-	content: '\e80c';
-}
-
-.icon--rewatch:before {
-	content: '\1f501';
+.icon--status {
+	color: #aaa;
 }
 
 .movie:hover .movie__title {
@@ -195,7 +191,7 @@ a:active {
 		text-align: right;
 	}
 
-	.movies-list {
+	.movies {
 		background: linear-gradient(white 30%, rgba(255,255,255,0)),
 					linear-gradient(rgba(255,255,255,0), white 70%) 0 100%,
 					radial-gradient(50% 0, farthest-side, rgba(0,0,0,.2), rgba(0,0,0,0)),
@@ -213,7 +209,8 @@ a:active {
 		position: fixed;
 		top: 3rem;
 		bottom: 3rem;
-		width: 100%;
+		left: 0;
+		right: 0;
 	}
 
 }

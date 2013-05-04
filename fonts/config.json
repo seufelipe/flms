@@ -1,72 +1,78 @@
 {
   "name": "flms",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
   "glyphs": [
     {
       "search": [
-        "emoticon",
-        "smiley",
-        "happy"
+        "star"
       ],
-      "code": 59392,
-      "meta": {
-        "email": "berbentseva_angela@yahoo.com",
-        "author": "Angela Berbentseva, specially for fontello"
-      },
-      "uid": "c64623255a4a7c72436b199b05296c4f",
-      "css": "good",
-      "orig_css": "emo-happy",
-      "orig_code": 59392,
-      "src": "fontelico",
-      "from": 59392
-    },
-    {
-      "search": [
-        "emoticon",
-        "smiley",
-        "displeased"
-      ],
-      "code": 59402,
-      "meta": {
-        "email": "berbentseva_angela@yahoo.com",
-        "author": "Angela Berbentseva, specially for fontello"
-      },
-      "uid": "043b585886018be7408f4c77c1a3759c",
-      "css": "bad",
-      "orig_css": "emo-displeased",
-      "orig_code": 59402,
-      "src": "fontelico",
-      "from": 59402
-    },
-    {
-      "search": [
-        "emoticon",
-        "smiley",
-        "grin"
-      ],
-      "code": 59404,
-      "meta": {
-        "email": "berbentseva_angela@yahoo.com",
-        "author": "Angela Berbentseva, specially for fontello"
-      },
-      "uid": "cbc328d1c779a2b9e3b1199d904199a5",
+      "code": 9734,
+      "from": 9734,
+      "uid": "d17030afaecc1e1c22349b99f3c4992a",
       "css": "fav",
-      "orig_css": "emo-grin",
-      "orig_code": 59404,
-      "src": "fontelico",
-      "from": 59404
+      "orig_css": "star-empty",
+      "orig_code": 9734,
+      "src": "fontawesome"
     },
     {
       "search": [
-        "loop",
+        "ok",
+        true,
+        "check",
+        "mark"
+      ],
+      "code": 10003,
+      "from": 10003,
+      "uid": "12f4ece88e46abd864e40b35e05b11cd",
+      "css": "watch",
+      "orig_css": "ok",
+      "orig_code": 10003,
+      "src": "fontawesome"
+    },
+    {
+      "search": [
+        "reload",
+        "redo",
         "repeat"
       ],
-      "code": 128257,
-      "uid": "8e0220796066428d6ddea96a4f1b5131",
-      "css": "review",
-      "orig_css": "loop",
-      "orig_code": 128257,
-      "src": "entypo",
-      "from": 128257
+      "code": 10227,
+      "from": 10227,
+      "uid": "bc71f4c6e53394d5ba46b063040014f1",
+      "css": "rewatch",
+      "orig_css": "cw",
+      "orig_code": 10227,
+      "src": "fontawesome"
+    },
+    {
+      "search": [
+        "thumbs",
+        "up",
+        "like",
+        "vote"
+      ],
+      "code": 128077,
+      "from": 128077,
+      "uid": "acf41aa4018e58d49525665469e35665",
+      "css": "good",
+      "orig_css": "thumbs-up",
+      "orig_code": 128077,
+      "src": "fontawesome"
+    },
+    {
+      "search": [
+        "thumbs",
+        "down",
+        "unlike",
+        "vote"
+      ],
+      "code": 128078,
+      "from": 128078,
+      "uid": "7533e68038fc6d520ede7a7ffa0a2f64",
+      "css": "bad",
+      "orig_css": "thumbs-down",
+      "orig_code": 128078,
+      "src": "fontawesome"
     }
   ]
 }
