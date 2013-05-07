@@ -65,7 +65,7 @@
 +		Safety not guaranteed
 		One night in Turin
 ++	r	Senhores do crime
-+		Extract
+		Extract
 +		Desconstruindo Harry
 +	r	Confissões de uma mente perigosa
 +		Flores partidas
@@ -74,3 +74,4 @@
 ++		Jiro Dreams of Sushi
 +		Férias frustradas
 +		Compliance
++		Fat kid rules the world
