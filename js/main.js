@@ -8,7 +8,7 @@ $(function() {
 	}
 
 	function buildIcon(icn,lbl,cls) {
-		return $('<i class="icon"><span aria-hidden="true" data-icon="' + icn +'"></span><span class="assistive-text">' + lbl + '</span></i>').addClass(cls).attr('title', lbl);
+		return $('<i class="icon" data-tip="'+ lbl +'"><span aria-hidden="true" data-icon="' + icn +'"></span><span class="assistive-text">' + lbl + '</span></i>').addClass(cls);
 	}
 
 	function printList(list) {
@@ -47,10 +47,12 @@ $(function() {
 
 			if (movie.rewatch)
 				item.addClass('movie--is-rewatch').append(buildIcon(movie.rewatch_icon, movie.rewatch_title, 'icon--status'));
-			else
-				item.append(buildIcon('&#x2713;', config.watchLabel, 'icon--status'));
+
 			if (movie.rate)
 				item.addClass('movie--' + movie.rate).append(buildIcon(movie.rate_icon, movie.rate_title, 'icon--rate'));
+
+			if (!movie.rewatch && !movie.rate)
+				item.append(buildIcon('&#x2713;', config.watchLabel, 'icon--status'));
 
 			if( reverseList ) {
 				moviesList.prepend(item);
