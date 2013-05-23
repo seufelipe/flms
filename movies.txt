@@ -81,3 +81,4 @@
 +		Os candidatos
 ++	r	Moon
 +		Lincoln
++		Dublê do diabo
