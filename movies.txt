@@ -82,3 +82,10 @@
 ++	r	Moon
 +		Lincoln
 +		Dublê do diabo
++		Bully
+++	r	Filhos da esperança
+++	r	Let the right one in
+++		Kumaré
++		Shotgun stories
++		That guy... who was in that thing
+++		The inbetweeners movie
